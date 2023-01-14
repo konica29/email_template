@@ -1,0 +1,276 @@
+.popup-inner {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 0;
+    overflow: auto;
+    z-index: 16;
+}
+
+.popup-inner .popup {
+    display: flex;
+    margin: auto;
+    position: relative;
+    width: 86%;
+    margin-top: 2rem;
+}
+
+.popup-inner .popup .form {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+}
+
+.popup-inner .popup .form h2 {
+    text-align: center;
+}
+
+.popup-inner .popup .form label {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #B2B2B2;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.popup-inner .popup .form label img {
+    width: 8px;
+    height: 8px;
+    margin-right: 0.5rem;
+}
+
+.popup-inner .popup .form .tabs {
+    display: flex;
+    flex-flow: wrap;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.popup-inner .popup .form .tabs label {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.popup-inner .popup .form .tabs .item {
+    padding: 0.5rem;
+    border: 1px solid #B2B2B2;
+    margin-right: 0.6rem;
+}
+
+.popup-inner .popup .form .tabs .item p {
+    color: #B2B2B2;
+}
+
+.popup-inner .popup .form .tabs .item input {
+    display: none;
+}
+
+.popup-inner .popup .form .tabs .item:last-child {
+    margin-right: 0;
+}
+
+.popup-inner .popup .form .tabs .active {
+    background-color: #ff1f59;
+    border-color: #ff1f59;
+}
+
+.popup-inner .popup .form .tabs .active p {
+    color: #FFFFFF;
+}
+
+.popup-inner .popup .form .input-container {
+    display: flex;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: transparent;
+    border: 2px solid #F5F5F5;
+    position: relative;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+
+}
+
+.popup-inner .popup .form .input-container input {
+    color: black;
+
+}
+.popup-inner .popup .form .message textarea {
+    color: black;
+
+}
+
+.popup-inner .popup .form .input-container label {
+    position: absolute;
+    top: -9px;
+    left: 12px;
+    background-color: white;
+}
+
+.popup-inner .popup .form .input-container input,
+.popup-inner .popup .form .input-container textarea {
+    border: none;
+    outline: 0;
+    padding: 0;
+    background-color: transparent;
+    font-weight: normal;
+    width: 100%;
+}
+
+.popup-inner .popup .form .input-container textarea {
+    height: 44px;
+    resize: none;
+    overflow: auto;
+}
+
+.popup-inner .popup .form .input-container ::-webkit-input-placeholder {
+    /* Edge */
+    color: #B2B2B2;
+}
+
+.popup-inner .popup .form .input-container ::-ms-input-placeholder {
+    /* Edge */
+    color: #B2B2B2;
+}
+
+.popup-inner .popup .form .input-container .phonecode-field {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.popup-inner .popup .form .input-container .phonecode-field span {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-right: 4px;
+    background-color: transparent;
+    min-width: 32px;
+    color: #B2B2B2;
+}
+
+.popup-inner .popup .form .input-container .phonecode-field .country-code {
+    width: 47px;
+    border: none;
+    margin-right: 0.5rem;
+    outline: 0;
+    border-right: 1px solid #b2b2b2;
+    box-shadow: none;
+    background-color: transparent;
+    font-size: 14px;
+    color: #B2B2B2;
+    font-weight: normal;
+}
+
+.popup-inner .popup .form .input-container .phonecode-field input {
+    outline: 0!important;
+    border: none!important;
+    padding: 0 8px 0 8px;
+}
+
+.popup-inner .popup .form .input-container .phonecode-field .hidden-field {
+    z-index: -1;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.popup-inner .popup .form .checkEmail{
+    flex-direction: column;
+    width: 100%;
+}
+
+.popup-inner .popup .form .form-consent input {
+    border: 1px solid #B2B2B2
+}
+
+.popup-inner .popup .form .input-container .phonecode-field .country-code option {
+    color: #B2B2B2;
+}
+
+.popup-inner .popup .form .input-error {
+    border: 2px solid #ff0000 !important;
+}
+
+.popup-inner .popup .form .input-error label {
+    color: #ff0000;
+}
+
+.popup-inner .popup .form .input-error ::-webkit-input-placeholder {
+    /* Edge */
+    color: #ff0000;
+}
+
+.popup-inner .popup .form .input-error ::-ms-input-placeholder {
+    /* Edge */
+    color: #ff0000;
+}
+
+.popup-inner .popup .form .input-error span img {
+    opacity: 1;
+}
+
+.popup-inner .popup .form-consent {
+    display: flex;
+    font-size: 11px;
+    margin-bottom: 0.4rem;
+    width: 100%;}
+
+.popup-inner .popup .form-consent label {
+    width: calc(100% - 30px);
+    text-transform: unset;
+    font-weight: normal;
+    display: flex;
+    align-self: center;
+    margin-left: 0.3rem;
+    font-size: 11px;
+}
+
+.popup-inner .popup .form-consent p {
+    color: #B2B2B2;
+    width: 100%;
+    margin-top: 0.5rem;
+    font-size: 11px;
+}
+
+.popup-inner .popup .form-consent:nth-last-child(2) {
+    flex-flow: wrap;
+    margin-bottom: 0;
+}
+
+.popup-inner .popup .buttons {
+    justify-content: center;
+}
+
+.popup-inner .popup .close-btn {
+    width: 47px;
+    position: absolute;
+    top: -24px;
+    right: -21px;
+    z-index: 3;
+}
+
+
+@media (min-width: 768px) {
+    .third-brand .popup-inner .popup {
+        max-width: 700px;
+    }
+    .third-brand .popup-inner .form {
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 1366px) {
+    .third-brand .popup-inner .popup {
+        margin-top: 8rem;
+    }
+}

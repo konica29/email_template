@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\EmailTemplate;
+use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-
-
+ 
     public function index()
     {
 
@@ -19,6 +18,5 @@ class HomeController extends Controller
     {
         return view("admin.dashboard");
     }
-
 
 }

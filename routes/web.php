@@ -1,7 +1,8 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\EmailTemplateController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,12 +14,17 @@ use App\Http\Controllers\EmailTemplateController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// Login 
 
 
 Auth::routes();
-Route::group(['middleware' => ['auth', 'verified']], function () {
-Route::get('/', [HomeController::class, 'dashboard'])->name('dashboard');
+//Logout
+// Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 
-Route::resource('/email',EmailTemplateController::class);
-});
+Route::group(['middleware' => ['auth', 'verified']], function () {
+    Route::get('/', [HomeController::class, 'dashboard'])->name('dashboard');
+    
+    Route::resource('/email','EmailTemplateController');
+    });
+    
+

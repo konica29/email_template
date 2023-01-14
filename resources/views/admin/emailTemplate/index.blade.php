@@ -48,7 +48,7 @@
                                             style="display:inline">
                                             <input type="hidden" name="name" value="{{$emailTemplate->name}}">
                                             <input type="hidden" name="email" value="{{$emailTemplate->email}}">
-                                            <input type="hidden" name="description" value="{{$emailTemplate->description}}">
+                                            <input type="hidden" name="additiona_info" value="{{$emailTemplate->description}}">
                                              @csrf
                                              <button type="submit" class="fa fa-envelope text-yellow" style="border: 0px;background:transparent;"></button>
                                           </form>

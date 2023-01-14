@@ -1,0 +1,287 @@
+/* banner css */
+
+.flexdesk .side-1 .client-logos div{
+  width: 72px;
+}
+.flexdesk .side-2{
+  min-width: 520px !important;
+  padding: 60px 126px 80px 95px !important;
+}
+.enq-form.form-inner{
+  width: 100%!important;
+  max-width: 100% !important;
+}
+
+.enq-form.form-inner .chart-box h3{
+font-size: 32px !important;
+margin-bottom: 15px !important;
+}
+.enq-form.form-inner .tabs .active{
+  background-color: #95c1ff;
+  border-color: #95c1ff;
+}
+.enq-form.form-inner .input-container label{
+
+  background-color: #0a2954;
+}
+.enq-form.form-inner .input-container input, .enq-form.form-inner .input-container textarea{
+  color: #FFFFFF;
+}
+/* footer css */
+.form-inner {
+  display: flex;
+  flex-direction: column;
+}
+.form p{
+    margin: 0;
+    font-size: 14px;
+}
+.form-inner h2 {
+  text-align: center;
+  margin-top: 0;
+}
+.form-inner label {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  color: #B2B2B2;
+  text-transform: uppercase;
+  font-weight: 600 !important;
+}
+.form-inner label img {
+  width: 8px;
+  height: 8px;
+  margin-right: 0.5rem;
+}
+.form-inner .tabs {
+  display: flex;
+  flex-flow: wrap;
+  margin-bottom: 2rem;
+}
+.form-inner .tabs label {
+  width: 100%;
+  margin-bottom: 1rem !important;
+}
+.form-inner .tabs .item {
+  padding: 0.5rem;
+  border: 1px solid #B2B2B2;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.form-inner .tabs .item p {
+  color: #B2B2B2;
+}
+.form-inner .tabs .item input {
+  display: none !important;
+}
+.form-inner .tabs .item:last-child {
+  margin-right: 0;
+}
+.form-inner .tabs .active {
+  background-color: #0C9089;
+  border-color: #0C9089;
+}
+.form-inner .tabs .active p {
+  color: #FFFFFF;
+}
+.form-inner .input-container {
+    display: flex;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: transparent;
+    border: 2px solid #B2B2B2;
+    position: relative;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+.form-inner .input-container label {
+  position: absolute;
+  top: -9px;
+  left: 12px;
+  background-color: #ebf6f1;
+}
+.form-inner .input-container input,
+.form-inner .input-container textarea { 
+    border: none !important;
+    outline: 0 !important;
+    padding: 0 !important;
+    background-color: transparent !important;
+    font-weight: normal !important;
+    width: 100%;
+}
+.form-inner .input-container textarea { 
+    height: 44px;
+    resize: none;
+    overflow: auto;
+}
+.form-inner .input-container ::-webkit-input-placeholder {
+  /* Edge */
+  color: #B2B2B2;
+}
+.form-inner .input-container ::-ms-input-placeholder {
+  /* Edge */
+  color: #B2B2B2;
+}
+.form-inner .input-container .phonecode-field {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: 0;
+}
+.form-inner .input-container .phonecode-field span {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-right: 4px;
+    background-color: transparent;
+    min-width: 32px;
+  color: #B2B2B2;   
+}
+.form-inner .input-container .phonecode-field .country-code {
+    width: 47px;
+    border: none;
+    margin-right: 0.5rem;
+    outline: 0;
+    border-right: 1px solid #b2b2b2;
+    box-shadow: none;
+    background-color: transparent;
+    font-size: 14px;
+  color: #B2B2B2;
+  font-weight: normal;
+}
+.form-inner .input-container .phonecode-field input {
+    outline: 0!important;
+    border: none!important;
+    padding: 0 8px 0 8px;
+}
+.form-inner .input-container .phonecode-field .hidden-field {
+    z-index: -1;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+.form-inner .input-container .phonecode-field .hidden-field input {
+    border: none;
+    padding: 0;
+}
+.form-inner .input-container .phonecode-field .country-code option {
+  color: #B2B2B2;
+}
+.form-inner .input-error {
+  border: 2px solid #ff0000 !important;
+}
+.form-inner .input-error label {
+  color: #ff0000;
+}
+.form-inner .input-error ::-webkit-input-placeholder {
+  /* Edge */
+  color: #ff0000;
+}
+.form-inner .input-error ::-ms-input-placeholder {
+  /* Edge */
+  color: #ff0000;
+}
+.form-inner .input-error span img {
+  opacity: 1;
+}
+.form-inner .form-consent {
+    display: flex;
+    font-size: 11px;
+    margin-bottom: 0.4rem;
+    width: 100%;    
+  margin-bottom: 0;
+}
+.form-inner .consent-error p{
+  color: #ff0000;
+  font-size: 11px;
+  margin: 0.4rem;
+
+}
+.form-inner .form-consent input{
+  width: auto !important;
+  margin: 0px 4px 0 0;
+}
+.form-inner .form-consent label {
+  display: flex;
+  align-self: center;
+  width: calc(100% - 30px); 
+  text-transform: unset;
+  font-weight: normal !important;
+  margin-left: 0.3rem;
+  font-size: 11px;
+  cursor: pointer;
+}
+.form-inner .form-consent p {
+  color: #B2B2B2; 
+  width: 100%;
+  margin-top: 0.5rem;
+  font-size: 11px;
+}
+.form-inner .form-consent:nth-last-child(2) {
+  flex-flow: wrap;
+  margin-bottom: 0;
+}
+.form-inner .buttons {
+  justify-content: center;
+}
+.form-inner .close-btn {
+  width: 47px;
+  position: absolute;
+  top: -24px;
+  right: -21px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.choose-us .choose-side>p{
+    text-align: left !important;
+  }
+
+@media (min-width: 768px){
+    .choose-us .choose-side, .form-inner{
+      width: 100% !important;
+    }
+    .form-inner .form{
+      display: flex;
+      justify-content: space-between;
+      flex-flow: wrap;
+    }
+.form-inner, .form-inner .tabs, .form-inner .input-container.message, .form-inner .buttons{
+  width: 100%;
+}
+.form-inner .checkEmail{
+    display: contents;
+}
+.form-inner {
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: flex-start; 
+  margin-top: 2rem;
+}
+.form-inner .input-container{
+  width: 48%;
+}
+.choose-us .flexdesk::after{
+  content: none !important;
+}
+}
+
+@media (min-width: 1024px){
+  .choose-us .choose-side, .form-inner{
+      width: 48% !important;
+  }
+  .form-inner{
+      margin-top: 0;
+  }
+}
+@media (min-width: 1366px){
+  .choose-us .flexdesk{
+      display: flex!important;
+      margin: 0!important;
+      max-width: 100% !important;
+  }
+  .choose-us .choose-side{
+      margin: 0 !important;
+  }
+}

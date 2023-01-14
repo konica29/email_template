@@ -1,0 +1,230 @@
+
+  #other-fourth {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+  }
+  #other-fourth h2 {
+    text-align: center;
+  }
+  #other-fourth label {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #B2B2B2;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  #other-fourth label img {
+    width: 8px;
+    height: 8px;
+    margin-right: 0.5rem;
+  }
+  #other-fourth .tabs {
+    display: flex;
+    flex-flow: wrap;
+    margin-bottom: 1.5rem;
+  }
+  #other-fourth .tabs label {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  #other-fourth .tabs .item {
+    padding: 0.5rem;
+    border: 1px solid #B2B2B2;
+    margin-right: 0.6rem;
+    cursor: pointer;
+  }
+  #other-fourth .tabs .item p {
+    color: #B2B2B2;
+  }
+  #other-fourth .tabs .item input {
+    display: none;
+  }
+  #other-fourth .tabs .item:last-child {
+    margin-right: 0;
+  }
+  #other-fourth .tabs .active {
+    background-color: #0C9089;
+    border-color: #0C9089;
+  }
+  #other-fourth .tabs .active p {
+    color: #FFFFFF;
+  }
+  #other-fourth .input-container {
+      display: flex;
+      width: 100%;
+      padding: 0.8rem;
+      background-color: transparent;
+      border: 2px solid #F5F5F5;
+      position: relative;
+      margin-bottom: 1.5rem;
+      border-radius: 5px;
+  }
+  #other-fourth .input-container label {
+    position: absolute;
+    top: -9px;
+    left: 12px;
+    background-color: white;
+  }
+  #other-fourth .input-container input,
+  #other-fourth .input-container textarea { 
+      border: none;
+      outline: 0;
+      padding: 0;
+      background-color: transparent;
+      font-weight: normal;
+      width: 100%;
+  }
+  #other-fourth .input-container textarea { 
+      height: 44px;
+      resize: none;
+      overflow: auto;
+  }
+  #other-fourth .input-container ::-webkit-input-placeholder {
+    /* Edge */
+    color: #B2B2B2;
+  }
+  #other-fourth .input-container ::-ms-input-placeholder {
+    /* Edge */
+    color: #B2B2B2;
+  }
+  #other-fourth .input-container .phonecode-field {
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+  }
+  #other-fourth .input-container .phonecode-field span {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      margin-right: 4px;
+      background-color: transparent;
+      min-width: 32px;
+    color: #B2B2B2;   
+  }
+  #other-fourth .input-container .phonecode-field .country-code {
+      width: 47px;
+      border: none;
+      margin-right: 0.5rem;
+      outline: 0;
+      border-right: 1px solid #b2b2b2;
+      box-shadow: none;
+      background-color: transparent;
+      font-size: 14px;
+    color: #B2B2B2;
+    font-weight: normal;
+  }
+  #other-fourth .input-container .phonecode-field input {
+      outline: 0!important;
+      border: none!important;
+      padding: 0 8px 0 8px;
+  }
+  #other-fourth .input-container .phonecode-field .hidden-field {
+      z-index: -1;
+      width: 0;
+      height: 0;
+      pointer-events: none;
+      overflow: hidden;
+  }
+  #other-fourth .input-container .phonecode-field .hidden-field input {
+      border: none;
+      padding: 0;
+  }
+  #other-fourth .input-container .phonecode-field .country-code option {
+    color: #B2B2B2;
+  }
+  #other-fourth .input-error {
+    border: 2px solid #ff0000 !important;
+  }
+  #other-fourth .input-error label {
+    color: #ff0000;
+  }
+  #other-fourth .input-error ::-webkit-input-placeholder {
+    /* Edge */
+    color: #ff0000;
+  }
+  #other-fourth .input-error ::-ms-input-placeholder {
+    /* Edge */
+    color: #ff0000;
+  }
+  #other-fourth .input-error span img {
+    opacity: 1;
+  }
+  #other-fourth .form-consent {
+      display: flex;
+      font-size: 11px;
+      margin-bottom: 0.4rem;
+      width: 100%;    
+  }
+  #other-fourth .form-consent label {
+    width: calc(100% - 30px); 
+    text-transform: unset;
+    font-weight: normal;
+      display: flex;
+      align-self: center;
+      margin-left: 0.3rem;
+      font-size: 11px;
+      cursor: pointer;
+  }
+  #other-fourth .form-consent p {
+    color: #B2B2B2; 
+    width: 100%;
+    margin-top: 0.5rem;
+    font-size: 11px;
+  }
+  #other-fourth .form-consent:nth-last-child(2) {
+    flex-flow: wrap;
+    margin-bottom: 0;
+  }
+  #other-fourth .buttons {
+    justify-content: center;
+  }
+  #other-fourth .close-btn {
+    width: 47px;
+    position: absolute;
+    top: -24px;
+    right: -21px;
+    z-index: 3;
+    cursor: pointer;
+  }
+  
+  @media (min-width: 768px){
+  #other-fourth, #other-fourth .tabs, #other-fourth .input-container.message, #other-fourth .buttons{
+    width: 100%;
+  }
+  #other-fourth .checkEmail{
+      display: contents;
+  }
+  #other-fourth {
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+  }
+  #other-fourth .input-container{
+    width: 48%;
+  }
+  }
+  
+  @media (min-width: 1024px){
+    #other-form .learn-content{
+        width: 47%;
+    }
+    #other-form .learn-content ul{
+        flex-direction: column;
+    }
+    #other-form .learn-content ul li{
+        width: 100%;
+    }
+    #other-fourth{
+        width: 50%;
+    }
+  }
+  @media (min-width: 1366px){
+     #other-form  .learn-content .clients{
+        margin-top: 0;
+      }
+  }
